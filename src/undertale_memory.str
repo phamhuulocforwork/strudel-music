@@ -1,0 +1,17 @@
+samples({ 
+  kalimba: {c3:'https://cdn.freesound.org/previews/536/536550_11935698-lq.mp3'},
+  piano: 'github:felixroos/piano-samples'
+})
+
+setcps(0.35)
+
+let melody1 = note("g3 d4 c4 g3 b3 b3 c4 - - g3 c4 g3 b3 b3 c4 g3 d4 c4 g3 b3 b3 c4 g3 c4 e4 d4 c4 d4")
+  .s("kalimba")
+
+stack(
+  seq(melody1).slow(4),
+)
+.room(0.3)
+.gain(0.7)
+.delay(0.1)
+.lpf(2000)
