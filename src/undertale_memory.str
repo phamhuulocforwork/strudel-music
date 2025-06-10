@@ -4,15 +4,15 @@ samples({
 setcps(0.35)
 
 const melody1 = note(`
-  e3 b3 a3 e3 g#3/2 g#3/2 a3
-  -- e3 a3 e3 g#3/2 g#3/2 a3
-  e3 b3 a3 e3 g#3/2 g#3/2 a3
-  -- e3 a3 c#4 b3/2 a3/2 b3
-  e3 b3 a3 e3 g#3/2 g#3/2 a3
+  e3 b3 a3 e3 g#3@1.5 g#3@1.5 a3
+  -- e3 a3 e3 g#3@1.5 g#3@1.5 a3
+  e3 b3 a3 e3 g#3@1.5 g#3@1.5 a3
+  -- e3 a3 c#4 b3@1.5 a3@1.5 b3
+  e3 b3 a3 e3 g#3@1.5 g#3@1.5 a3
   `)
   .room(0.3)
   .color("white")
-  //._punchcard()
+  ._punchcard()
   .s("kalimba")
 const harmony1 = note(`
   -- d3 -- d3 -- d3 -- d3
@@ -23,7 +23,7 @@ const harmony1 = note(`
   `)
   .room(0.8)
   .color("white")
-  //._punchcard()
+  ._punchcard()
   .s("kalimba")
 
 stack(
